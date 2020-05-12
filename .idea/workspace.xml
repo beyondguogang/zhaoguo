@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6049032d-8f0a-404d-a701-1b3215aba3ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/sanjiao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/item.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\cmd\git.exe" />
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bZErhGMKBDicrfUoeN6wFHfgiJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6049032d-8f0a-404d-a701-1b3215aba3ec" name="Default Changelist" comment="" />
+      <created>1588831415737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588831415737</updated>
+      <workItem from="1588831417744" duration="2065000" />
+      <workItem from="1588841687978" duration="5654000" />
+      <workItem from="1588910088040" duration="6092000" />
+      <workItem from="1588918831308" duration="4095000" />
+      <workItem from="1588922981080" duration="10590000" />
+      <workItem from="1588989438527" duration="25661000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1588917600674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588917600674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588917810906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588917810906" />
+    <state x="560" y="106" key="CommitChangelistDialog2" timestamp="1588917600683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588917600683" />
+    <state x="360" y="120" width="1200" height="800" key="DiffContextDialog" timestamp="1588919208742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="360" y="120" width="1200" height="800" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588919208742" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588924468766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588924468766" />
+    <state x="832" y="417" width="256" height="297" key="Github.ShareDialog" timestamp="1588924912768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="832" y="417" width="256" height="297" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588924912768" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1588924005414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588924005414" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588920474866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588920474866" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1588848796434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588848796434" />
+  </component>
+</project>

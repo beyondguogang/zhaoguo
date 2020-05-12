@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="item.css" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+<div id="app">
+<!--    <hello-world title="hello"></hello-world>-->
+    <!--头部-->
+    <div class="title" >
+        <a href="#javascript">
+            <img alt="logo" class="logo" src="img/logo1.jpg" style="">
+        </a>
+        <!--列表-->
+        <div class="title-list">
+            <ul class="title-list-icon">
+                <li><a href="">首页</a></li>
+                <li><a href="">文档</a></li>
+                <li><a href="">博客</a></li>
+                <li><a href="">社区</a></li>
+                <li>
+                    <a href="">
+                        <img alt="" src="img/timg.jpg" style="width: 30px;height: 30px ;margin-top: 10px;margin-right: 10px;margin-top:0">
+                    </a>
+                </li>
+                <li class="last-li" v-on:mouseenter="fn" v-on:mouseleave="fn2" >鼠标移上
+                    <div class="sign-in" v-bind:class="{active:isActive}">
+                        <a href="">登录</a>
+                        <a href="">修改密码</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!--隐藏登录修改-->
+        <!-- <div class="sign-in" v-on:mouseleave="fn1" v-bind:class="{active:isActive}">
+             <a href="">登录</a>
+             <a href="">修改密码</a>
+         </div>-->
+    </div>
+    <!--内容-->
+    <div class="content"  >
+        <!--左边栏-->
+        <div class="list-item">
+            <h2 class="flag">标题</h2>
+            <div class="project">
+                <div v-on:click="fn3"  class="aa">
+                    <i v-bind:class="{icon:isItemList}"></i>配置管理
+                </div>
+                <!--列表项-->
+                <div class="dis" v-bind:class="{itemList:isItemList}">
+                    <div style="background: #ececf6">xxxx</div>
+                    <div class="bb">xxxx</div>
+                    <div class="bb">xxxx</div>
+                </div>
+
+
+                <div v-on:click="fn4" class="aa">
+                    <i v-bind:class="{icon:isItemList1}"></i>服务管理
+                </div>
+                    <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                    </div>
+
+
+                <div class="aa"> 命名空间</div>
+                <div class="aa" v-on:click="fn5">
+                    <i v-bind:class="{icon:isItemList2}"></i>数据管理
+                </div>
+                    <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                    </div>
+
+
+            </div>
+            <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
+        </div>
+
+        <!--右边栏-->
+        <div class="page">
+          <!--右边栏头部导航-->
+         <div class="content-right-nav">
+                <span class="sp1">public</span>
+                <span class="sp2">sandbox-intranet</span>
+                <span class="sp3">sandbox</span>
+            </div>
+<!--          动态显示查询结果  -->
+          <div class="query">
+                <i></i>
+                配置管理
+                <span class="txt">public</span>
+                <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
+            </div>
+<!--         查询输入框   -->
+           <div class="in">
+                <label for="text">Data ID:</label>
+                <input placeholder="模糊查询请输入Data " type="text" id="text">
+                <label for="text1">Group:</label>
+                <input placeholder="模糊查询请输入Group" type="text" id="text1">
+                <button>查询</button>
+                <span class="frame">高级查询</span>
+                <button>导出高级查询</button>
+                <button>导入配置</button>
+                <div class="plus">+</div>
+            </div>
+<!--            数据-->
+            <div class="data">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="add1"><button></button></th>
+                        <th class="add"><div>Data Id</div></th>
+                        <th class="add"><div>Group</div></th>
+                        <th class="add"><div>归属应用:</div></th>
+                        <th class="add"><div>操作</div></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+
+    </div>
+
+    <!--底部-->
+    <div></div>
+
+</div>
+</div>
+</body>
+
+</html>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="item.js"></script>
+<!--<script>
+    let a=document.getElementsByClassName('last-li')[0];
+    let b=document.getElementsByClassName('sign-in')[0];
+    a.onmouseenter=function(){
+        // alert('zz')
+        b.style.display='inline-block'
+    };
+    b.onmouseleave=function () {
+        b.style.display='none'
+    }-->
+
+
+
+
+<!--  /*  console.log($('.last-li'));-->
+<!--    $('.last-li').click=function () {-->
+<!--         alert('zz')-->
+<!--        console.log(1)-->
+<!--        console.log($(".sign-in").css('color','red'));-->
+<!--    }*/-->
+<!--    /*let vm=new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{-->
+<!--            todos:[]-->
+
+<!--        },-->
+<!--        methods:{-->
+<!--         moved:function (e) {-->
+
+<!--         }-->
+<!--    }-->
+<!--    })*/-->
+<!--</script>-->
+

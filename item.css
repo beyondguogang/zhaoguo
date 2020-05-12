@@ -1,0 +1,258 @@
+/*头部样式*/
+.title {
+    width: 100%;
+    height: 50px;
+    background: #1b1e21;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px
+}
+
+.title .title-list {
+    float: right;
+    margin-right: 20px;
+}
+
+.title .title-list .title-list-icon li {
+    color: #adb5bd;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.title .title-list .title-list-icon li a:hover {
+    opacity: 1;
+}
+
+.title .title-list .title-list-icon li a {
+    color: #adb5bd;
+    opacity: .6;
+}
+
+.title .title-list .title-list-icon .last-li {
+    /*overflow: hidden;*/
+    width: 70px;
+    height: 100px;
+    /*position: relative;*/
+}
+
+.title .sign-in {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50px;
+    right: 6px;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.title .sign-in a {
+    display: inline-block;
+    color: #adb5bd;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+.title .active {
+    display: block;
+}
+
+.title .sign-in a:hover {
+    opacity: .5;
+}
+
+/*    中间内容*/
+.content {
+    height: 100%;
+    background: #1d2124;
+}
+
+.content .list-item {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    float: left;
+    width: 15%;
+    /*height:420px;*/
+    background: #e2e3e5;
+}
+
+.content .list-item .flag {
+    text-align: center;
+}
+
+.content .project {
+    list-style: none;
+}
+
+.content .project div {
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    line-height: 60px;
+    width: 100%;
+}
+
+.content .project div i {
+    /*border: 5px solid black;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #4D4D4D;
+    /*transition: all 0.1s ease 0.1s*/
+}
+
+.content .project .aa:hover {
+    background: #ececf6;
+    /*transform:rotate(90deg)*/
+}
+.content .project .bb:hover{
+    background: #ececf6;
+}
+/*左侧导航条*/
+.content .icon{
+    transform:rotate(90deg)
+}
+
+.content .dis{
+    display: none;
+}
+.content .itemList{
+    display:block ;
+}
+.content .dis1{
+    display: none;
+}
+.content .itemList1{
+    display:block ;
+}
+.content .dis2{
+    display: none;
+}
+.content .itemList2{
+    display:block ;
+}
+/*右边内容区*/
+.content .page{
+    float: right;
+    width: 85%;
+}
+.content .content-right-nav{
+    margin-top: 15px;
+    margin-left: 20px;
+    /*float: left;*/
+    /*position: relative;*/
+    width: 98%;
+    height: 40px;
+    line-height: 40px;
+    background: #e2e3e5;
+    /*opacity: .5;*/
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+.content .content-right-nav .sp1{
+    color: rgb(0, 193, 222);
+    border-right: 1px solid #5a6268;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.content .content-right-nav .sp2{
+    border-right: 1px solid #5a6268;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.content .content-right-nav .sp2{
+    padding-left: 10px;
+}
+.content .page .query{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.content .page .query .txt{
+    font-weight: 500;
+    border-left: 1px solid #16181b;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.content .page .query .txt1{
+    margin-left: 40px;
+    color: #95999c;
+}
+.content .page .query i{
+    border: 2px solid deepskyblue;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.page .in{
+  margin-left: 20px;
+    width: 98%;
+    /*border: 1px solid red;*/
+    display: inline-block;
+}
+.page .in label{
+    font-weight: 500;
+}
+.page .in input{
+    width:170px ;
+    padding-left: 10px;
+}
+.page .in input,button{
+    padding: 5px ;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 12px;
+    border: 1px solid #5a6268;
+    border-radius:5px
+}
+.page .in button{
+    background: #5584ff;
+    color: #ececf6;
+}
+.page .in .frame{
+    margin-left:30px ;
+}
+.page .in .plus{
+    background:rgb(238, 238, 238) ;
+    cursor: pointer;
+    width: 34px;
+    font-size: 26px;
+    line-height:initial;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    /*margin-right: 10px;*/
+    float:right;
+    margin-top: 13px;
+    margin-right: 40px;
+}
+
+/*数据项*/
+.content .data{
+    width: 98%;
+    border: 1px solid #5a6268;
+    margin-left:20px;
+    margin-top: 10px;
+
+}
+.content .data .add1{
+    width: 17%;
+}
+.data tr .add{
+    border-left: 1px solid #5a6268;
+
+}
