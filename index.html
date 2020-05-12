@@ -13,9 +13,9 @@
 <body>
 
 <div id="app">
-<!--    <hello-world title="hello"></hello-world>-->
+    <!--    <hello-world title="hello"></hello-world>-->
     <!--头部-->
-    <div class="title" >
+    <div class="title">
         <a href="#javascript">
             <img alt="logo" class="logo" src="img/logo1.jpg" style="">
         </a>
@@ -28,10 +28,11 @@
                 <li><a href="">社区</a></li>
                 <li>
                     <a href="">
-                        <img alt="" src="img/timg.jpg" style="width: 30px;height: 30px ;margin-top: 10px;margin-right: 10px;margin-top:0">
+                        <img alt="" src="img/timg.jpg"
+                             style="width: 30px;height: 30px ;margin-top: 10px;margin-right: 10px;margin-top:0">
                     </a>
                 </li>
-                <li class="last-li" v-on:mouseenter="fn" v-on:mouseleave="fn2" >鼠标移上
+                <li class="last-li" v-on:mouseenter="fn" v-on:mouseleave="fn2">鼠标移上
                     <div class="sign-in" v-bind:class="{active:isActive}">
                         <a href="">登录</a>
                         <a href="">修改密码</a>
@@ -47,12 +48,12 @@
          </div>-->
     </div>
     <!--内容-->
-    <div class="content"  >
+    <div class="content" >
         <!--左边栏-->
         <div class="list-item">
             <h2 class="flag">标题</h2>
             <div class="project">
-                <div v-on:click="fn3"  class="aa">
+                <div class="aa" v-on:click="fn3">
                     <i v-bind:class="{icon:isItemList}"></i>配置管理
                 </div>
                 <!--列表项-->
@@ -63,78 +64,91 @@
                 </div>
 
 
-                <div v-on:click="fn4" class="aa">
+                <div class="aa" v-on:click="fn4">
                     <i v-bind:class="{icon:isItemList1}"></i>服务管理
                 </div>
-                    <div class="dis1" v-bind:class="{itemList1:isItemList1}">
-                        <div class="bb">xxxx</div>
-                        <div class="bb">xxxx</div>
-                    </div>
+                <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+                    <div class="bb">xxxx</div>
+                    <div class="bb">xxxx</div>
+                </div>
 
 
                 <div class="aa"> 命名空间</div>
                 <div class="aa" v-on:click="fn5">
                     <i v-bind:class="{icon:isItemList2}"></i>数据管理
                 </div>
-                    <div class="dis2" v-bind:class="{itemList2:isItemList2}">
-                        <div class="bb">xxxx</div>
-                        <div class="bb">xxxx</div>
-                        <div class="bb">xxxx</div>
-                    </div>
+                <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+                    <div class="bb">xxxx</div>
+                    <div class="bb">xxxx</div>
+                    <div class="bb">xxxx</div>
+                </div>
 
 
             </div>
             <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
         </div>
-
         <!--右边栏-->
         <div class="page">
-          <!--右边栏头部导航-->
-         <div class="content-right-nav">
+            <!--右边栏头部导航-->
+            <div class="content-right-nav">
                 <span class="sp1">public</span>
                 <span class="sp2">sandbox-intranet</span>
                 <span class="sp3">sandbox</span>
             </div>
-<!--          动态显示查询结果  -->
-          <div class="query">
+            <!--动态显示查询结果  -->
+            <div class="query">
                 <i></i>
                 配置管理
                 <span class="txt">public</span>
                 <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
             </div>
-<!--         查询输入框   -->
-           <div class="in">
+            <!--查询输入框   -->
+            <div class="in">
                 <label for="text">Data ID:</label>
-                <input placeholder="模糊查询请输入Data " type="text" id="text">
+                <input id="text" placeholder="模糊查询请输入Data " type="text">
                 <label for="text1">Group:</label>
-                <input placeholder="模糊查询请输入Group" type="text" id="text1">
+                <input id="text1" placeholder="模糊查询请输入Group" type="text" v-model="msg" v-on:input="delIcon">
+                    <span class="icon"><img src="img/timg3.jpg" alt="" v-bind:class="{ic:isIcon}" v-on:click="ico"></span>
+
                 <button>查询</button>
                 <span class="frame">高级查询</span>
                 <button>导出高级查询</button>
                 <button>导入配置</button>
                 <div class="plus">+</div>
             </div>
-<!--            数据-->
+            <!--数据 头-->
             <div class="data">
                 <table>
                     <thead>
                     <tr>
-                        <th class="add1"><button></button></th>
-                        <th class="add"><div>Data Id</div></th>
-                        <th class="add"><div>Group</div></th>
-                        <th class="add"><div>归属应用:</div></th>
-                        <th class="add"><div>操作</div></th>
+                        <th class="add1"><span></span></th>
+                        <th class="add">
+                            <div>Data Id</div>
+                        </th>
+                        <th class="add">
+                            <div>Group</div>
+                        </th>
+                        <th class="add">
+                            <div>归属应用:</div>
+                        </th>
+                        <th class="add">
+                            <div>操作</div>
+                        </th>
                     </tr>
                     </thead>
                 </table>
             </div>
+            <!--数据内容 -->
+            <div class="data-content">
+                <p> 没有数据</p>
+            </div>
+        </div>
+
+
+        <!--底部-->
+        <div></div>
 
     </div>
-
-    <!--底部-->
-    <div></div>
-
-</div>
 </div>
 </body>
 
@@ -152,8 +166,6 @@
     b.onmouseleave=function () {
         b.style.display='none'
     }-->
-
-
 
 
 <!--  /*  console.log($('.last-li'));-->
