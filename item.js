@@ -14,11 +14,20 @@ let vm=new Vue({
         },*/
         data:{
             msg:'',
+            msg1:'',
             isActive: false,
             isItemList:false,
             isItemList1:false,
             isItemList2:false,
-            isIcon:false
+            isIcon:false,
+            sty:'none',
+            rot:'rotate(45deg)',
+            line:'',
+            od:'none',
+            hide:'none',
+            hide1:'none',
+            bor:'1px solid #5a6268',
+            bor1:'1px solid #5a6268'
         },
         methods:{
             fn(){
@@ -59,14 +68,47 @@ let vm=new Vue({
             ico(){
                 this.isIcon=false;
                 this.msg='';
+            },
+            box(){
+
+                if(this.sty==='none'){
+                    this.sty = 'block';
+                    //this.line='all 0.1s ease 0.5s'
+                }else{
+                    this.sty='none'
+                }
+            },
+            rotate(){
+                if(this.rot==='rotate(45deg)'){
+                    this.rot='rotate(225deg)'
+                }else{
+                    this.rot='rotate(45deg)'
+                }
+            },
+            dropDown(){
+
+                if(this.od==='none'){
+                    this.od='block'
+                }else{
+                    this.od='none'
+                }
+            },
+            Empty(){
+                if(this.msg===''){
+                    this.hide='block';
+                    this.bor='1px solid red'
+                }else{
+                    this.hide='none';
+                    this.bor='1px solid #5a6268'
+                }
             }
 
 
 
-
-
-
-        }
+        },
+    computed:{
+            
+    }
     })
 /*vm.component={
     helloWorld:{

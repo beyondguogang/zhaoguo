@@ -100,8 +100,14 @@
     height: 100%;
     line-height: 60px;
     width: 100%;
+    cursor: pointer;
 }
-
+.content .project div .aa{
+    font-size: 18px;
+}
+.content .project .dis,.dis1,.dis2{
+    font-size: 12px;
+}
 .content .project div i {
     /*border: 5px solid black;*/
     /*width: 20px;*/
@@ -150,6 +156,10 @@
 .content .page{
     float: right;
     width: 90%;
+}
+.content .header{
+    margin-left: 20px;
+    margin-top: 15px;
 }
 .content .content-right-nav{
     margin-top: 15px;
@@ -216,7 +226,7 @@
     margin-top: 30px;
     margin-left: 15px;
     font-size: 12px;
-    border: 1px solid #5a6268;
+    /*border: 1px solid ;*/
     border-radius:5px
 }
 .page .in button{
@@ -225,6 +235,9 @@
 }
 .page .in .frame{
     margin-left:30px ;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(0, 193, 222);
 }
 .page .in .plus{
     background:rgb(238, 238, 238) ;
@@ -259,7 +272,48 @@
 .page .in .icon .ic{
     display: inline-block;
 }
-
+.page .in .senior{
+    position: relative;
+}
+.page .in .VerticalLine{
+    border: 2px solid deepskyblue;
+    margin-right: 10px;
+}
+.page .in .text{
+    margin-left: 86px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: red;
+}
+    /*三角箭头*/
+.page .in .senior .arrow{
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #95999c;
+    border-right: 2px solid #95999c;
+    /*transform: rotate(45deg);*/
+    /*transition: all 0.1s ease 0.1s*/
+    position: relative;
+    right: 30px;
+}
+.page .in .senior .sel{
+    width: 170px;
+    background: #fff;
+    border: 1px solid #95999c;
+    position: absolute;
+    left: 317px;
+    top: 60px;
+    z-index: 1;
+    height: 60px;
+    max-height: 400px;
+    text-align: center;
+    line-height: 60px;
+}
+.page .in .senior .sel span{
+   color: #95999c;
+}
     /*数据项*/
 .content .data{
     position: relative;

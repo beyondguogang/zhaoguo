@@ -47,111 +47,235 @@
              <a href="">修改密码</a>
          </div>-->
     </div>
-    <!--内容-->
-    <div class="content" >
-        <!--左边栏-->
-        <div class="list-item">
-            <h2 class="flag">标题</h2>
-            <div class="project">
-                <div class="aa" v-on:click="fn3">
-                    <i v-bind:class="{icon:isItemList}"></i>配置管理
-                </div>
-                <!--列表项-->
-                <div class="dis" v-bind:class="{itemList:isItemList}">
-                    <div style="background: #ececf6">xxxx</div>
-                    <div class="bb">xxxx</div>
-                    <div class="bb">xxxx</div>
-                </div>
+    <!--第一个页面-->
+    <div style="display: none">
+        <!--内容-->
+        <div class="content" >
+            <!--左边栏-->
+            <div class="list-item">
+                <h2 class="flag">标题</h2>
+                <div class="project">
+                    <div class="aa" v-on:click="fn3">
+                        <i v-bind:class="{icon:isItemList}"></i>配置管理
+                    </div>
+                    <!--列表项-->
+                    <div class="dis" v-bind:class="{itemList:isItemList}">
+                        <div style="background: #ececf6">xxxx</div>
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                    </div>
 
 
-                <div class="aa" v-on:click="fn4">
-                    <i v-bind:class="{icon:isItemList1}"></i>服务管理
-                </div>
-                <div class="dis1" v-bind:class="{itemList1:isItemList1}">
-                    <div class="bb">xxxx</div>
-                    <div class="bb">xxxx</div>
-                </div>
+                    <div class="aa" v-on:click="fn4">
+                        <i v-bind:class="{icon:isItemList1}"></i>服务管理
+                    </div>
+                    <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                    </div>
 
 
-                <div class="aa"> 命名空间</div>
-                <div class="aa" v-on:click="fn5">
-                    <i v-bind:class="{icon:isItemList2}"></i>数据管理
-                </div>
-                <div class="dis2" v-bind:class="{itemList2:isItemList2}">
-                    <div class="bb">xxxx</div>
-                    <div class="bb">xxxx</div>
-                    <div class="bb">xxxx</div>
-                </div>
+                    <div class="aa"> 命名空间</div>
+                    <div class="aa" v-on:click="fn5">
+                        <i v-bind:class="{icon:isItemList2}"></i>数据管理
+                    </div>
+                    <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                        <div class="bb">xxxx</div>
+                    </div>
 
 
+                </div>
+                <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
             </div>
-            <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
-        </div>
-        <!--右边栏-->
-        <div class="page">
-            <!--右边栏头部导航-->
-            <div class="content-right-nav">
-                <span class="sp1">public</span>
-                <span class="sp2">sandbox-intranet</span>
-                <span class="sp3">sandbox</span>
-            </div>
-            <!--动态显示查询结果  -->
-            <div class="query">
-                <i></i>
-                配置管理
-                <span class="txt">public</span>
-                <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
-            </div>
-            <!--查询输入框   -->
-            <div class="in">
-                <label for="text">Data ID:</label>
-                <input id="text" placeholder="模糊查询请输入Data " type="text">
-                <label for="text1">Group:</label>
-                <input id="text1" placeholder="模糊查询请输入Group" type="text" v-model="msg" v-on:input="delIcon">
+            <!--右边栏-->
+            <div class="page">
+                <!--右边栏头部导航-->
+                <div class="content-right-nav">
+                    <span class="sp1">public</span>
+                    <span class="sp2">sandbox-intranet</span>
+                    <span class="sp3">sandbox</span>
+                </div>
+                <!--动态显示查询结果  -->
+                <div class="query">
+                    <i></i>
+                    配置管理
+                    <span class="txt">public</span>
+                    <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
+                </div>
+                <!--查询输入框   -->
+                <div class="in">
+                    <label for="text">Data ID:</label>
+                    <input id="text" placeholder="模糊查询请输入Data " type="text">
+                    <label for="text1">Group:</label>
+                    <input id="text1" placeholder="模糊查询请输入Group" type="text" v-model="msg" v-on:input="delIcon">
                     <span class="icon"><img src="img/timg3.jpg" alt="" v-bind:class="{ic:isIcon}" v-on:click="ico"></span>
 
-                <button>查询</button>
-                <span class="frame">高级查询</span>
-                <button>导出高级查询</button>
-                <button>导入配置</button>
-                <div class="plus">+</div>
+                    <button>查询</button>
+                    <span class="frame" v-on:click="box">高级查询</span>
+                    <button>导出高级查询</button>
+                    <button>导入配置</button>
+                    <div class="plus">+</div>
+                    <div class="senior" v-bind:style="{display:sty}">
+                        <label for="text2">归属应用:</label>
+                        <input id="text2" placeholder="请输入应用名" type="text">
+
+                        <label for="text3">标签:</label>
+                        <input id="text3" placeholder="请输入标签" type="text">
+                        <i class="arrow" @click="rotate" :style="{transform:rot,transition:line}" v-on:click="dropDown"></i>
+
+
+
+                        <div class="sel" :style="{display:od}"><span>无选项</span></div>
+                    </div>
+                </div>
+
+                <!--显示隐藏-->
+
+                <!--数据 头-->
+                <div class="data">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="add1"><span></span></th>
+                            <th class="add">
+                                <div>Data Id</div>
+                            </th>
+                            <th class="add">
+                                <div>Group</div>
+                            </th>
+                            <th class="add">
+                                <div>归属应用:</div>
+                            </th>
+                            <th class="add">
+                                <div>操作</div>
+                            </th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--数据内容 -->
+                <div class="data-content">
+                    <p> 没有数据</p>
+                </div>
             </div>
-            <!--数据 头-->
-            <div class="data">
-                <table>
-                    <thead>
-                    <tr>
-                        <th class="add1"><span></span></th>
-                        <th class="add">
-                            <div>Data Id</div>
-                        </th>
-                        <th class="add">
-                            <div>Group</div>
-                        </th>
-                        <th class="add">
-                            <div>归属应用:</div>
-                        </th>
-                        <th class="add">
-                            <div>操作</div>
-                        </th>
-                    </tr>
-                    </thead>
-                </table>
-            </div>
-            <!--数据内容 -->
-            <div class="data-content">
-                <p> 没有数据</p>
+            <!--底部-->
+            <div></div>
+        </div>
+    </div>
+
+    <!--第二个页面-->
+    <div>
+        <div style="display: block">
+            <!--内容-->
+            <div class="content" >
+                <!--左边栏-->
+                <div class="list-item">
+                    <h2 class="flag">标题</h2>
+                    <div class="project">
+                        <div class="aa" v-on:click="fn3">
+                            <i v-bind:class="{icon:isItemList}"></i>配置管理
+                        </div>
+                        <!--列表项-->
+                        <div class="dis" v-bind:class="{itemList:isItemList}">
+                            <div style="background: #ececf6">配置列表</div>
+                            <div class="bb">历史版本</div>
+                            <div class="bb">监听查询</div>
+                        </div>
+
+
+                        <div class="aa" v-on:click="fn4">
+                            <i v-bind:class="{icon:isItemList1}"></i>服务管理
+                        </div>
+                        <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+                            <div class="bb">服务列表</div>
+                            <div class="bb">订阅者列表</div>
+                        </div>
+
+
+                        <div class="aa"> 命名空间</div>
+                        <div class="aa" v-on:click="fn5">
+                            <i v-bind:class="{icon:isItemList2}"></i>数据管理
+                        </div>
+                        <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+                            <div class="bb">节点列表</div>
+                        </div>
+
+
+                    </div>
+                    <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
+                </div>
+                <!--右边栏-->
+                <div class="page">
+                    <!--右边栏头部导航-->
+                    <div class="header">
+                        <h5>历史版本(保留30天)</h5>
+                    </div>
+                    <div class="content-right-nav">
+                        <span class="sp1">public</span>
+                        <span class="sp2">sandbox-intranet</span>
+                        <span class="sp3">sandbox</span>
+                    </div>
+                    <!--动态显示查询结果  -->
+                    <div class="query">
+                        <i></i>
+                        配置管理
+                        <span class="txt">public</span>
+                        <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
+                    </div>
+                    <!--查询输入框   -->
+                    <div class="in">
+                        <label for="textTwo"><i style="color: red ;padding-right: 5px;">*</i>Data ID:</label>
+                        <input id="textTwo" placeholder="模糊查询请输入Data " type="text" v-model="msg" :style="{border:bor}">
+                        <label for="text1Tow"><i style="color: red ;padding-right: 5px;">*</i>Group:</label>
+                        <input id="text1Tow" placeholder="模糊查询请输入Group" type="text" v-model="msg1" :style="{border:bor1}">
+                        <button @click="Empty">查询</button>
+                        <div class="text">
+                            <span :style="{display:hide}">Data ID不能为空</span>
+                            <span :style="{display:hide1}" style="padding-left: 172px;">Group不能为空</span>
+                        </div>
+
+                        <div><i class="VerticalLine"></i>查询结果:共查询到0条满足要求的配置</div>
+                    </div>
+
+
+                    <!--显示隐藏-->
+
+                    <!--数据 头-->
+                    <div class="data">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="add1"><span></span></th>
+                                <th class="add">
+                                    <div>Data Id</div>
+                                </th>
+                                <th class="add">
+                                    <div>Group</div>
+                                </th>
+                                <th class="add">
+                                    <div>归属应用:</div>
+                                </th>
+                                <th class="add">
+                                    <div>操作</div>
+                                </th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <!--数据内容 -->
+                    <div class="data-content">
+                        <p> 没有数据</p>
+                    </div>
+                </div>
+                <!--底部-->
+                <div></div>
             </div>
         </div>
-
-
-        <!--底部-->
-        <div></div>
-
     </div>
 </div>
 </body>
-
 </html>
 <script src="node_modules/vue/dist/vue.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
