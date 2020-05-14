@@ -1,18 +1,8 @@
 let vm=new Vue({
 
         el:'#app',
-       /* components:{
-          'helloWorld':{
-              props:['title'],
-              data(){
-                  return{
-                      a:12
-                  }
-              },
-              template:`<div>nihao{{a}}{{title}}</div>`
-}
-        },*/
         data:{
+            vm:'配置',
             msg:'',
             msg1:'',
             isActive: false,
@@ -27,7 +17,9 @@ let vm=new Vue({
             hide:'none',
             hide1:'none',
             bor:'1px solid #5a6268',
-            bor1:'1px solid #5a6268'
+            bor1:'1px solid #5a6268',
+            con:'block',
+            con1:'none'
         },
         methods:{
             fn(){
@@ -93,31 +85,74 @@ let vm=new Vue({
                     this.od='none'
                 }
             },
+            //历史版本的查询
             Empty(){
-                if(this.msg===''){
-                    this.hide='block';
-                    this.bor='1px solid red'
-                }else{
-                    this.hide='none';
-                    this.bor='1px solid #5a6268'
+                if(this.msg===''&& this.msg1===''){
+                    this.hide='inline-block';
+                    this.bor='1px solid red';
+                    this.hide1='inline-block';
+                    this.bor1='1px solid red';
+                }else if(this.msg===''&& this.msg1!==''){
+                    this.hide='inline-block';
+                    this.bor='1px solid red';
+                }else if(this.msg!==''&&this.msg1===''){
+                    this.hide1='inline-block';
+                    this.bor1='1px solid red';
                 }
+            },
+            inp(){
+                this.hide='none';
+                this.bor='1px solid #5a6268';
+                if(this.msg===''){
+                    this.hide='inline-block';
+                    this.bor='1px solid red';
+                }
+            },
+            inp2(){
+                this.hide1='none';
+                this.bor1='1px solid #5a6268';
+                if(this.msg1===''){
+                    this.hide1='inline-block';
+                    this.bor1='1px solid red';
+                }
+            },
+            //监听历史查询维度
+            register(){
+                if(this.rot==='rotate(45deg)'){
+                    this.rot='rotate(225deg)'
+                        this.sty='block'
+
+                }else{
+                    this.rot='rotate(45deg)'
+                    this.sty='none'
+                }
+            },
+            content(){
+                if(this.rot==='rotate(225deg)'){
+                    this.rot='rotate(45deg)'
+                    this.sty='none'
+                }
+
+            },
+            configure(){
+                 this.vm='配置';
+                 this.con1='none';
+                 this.con='block'
+               //  if (this.vm==='配置'){
+               //      this.con='block';
+               //  }else{
+               //      this.con='none';
+               //  }
+
+            },
+            ip(){
+                 this.vm='IP';
+                 this.con='none';
+                 this.con1='block'
             }
-
-
-
         },
     computed:{
-            
+
     }
     })
-/*vm.component={
-    helloWorld:{
-        props:['title'],
-            data(){
-            return{
-                msg:'mm'
-            }
-        }
-    },
-    template:`<div>{{msg}}</div>`
-}*/
+

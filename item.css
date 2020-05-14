@@ -280,10 +280,66 @@
     margin-right: 10px;
 }
 .page .in .text{
+    position: relative;
     margin-left: 86px;
     margin-bottom: 30px;
     font-size: 12px;
     color: red;
+}
+.page .in .text1{
+    position: relative;
+    margin-left: 367px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: red;
+}
+.page .in .swi{
+    position: absolute;
+    z-index: 1;
+    top: 204px;
+    width: 170px;
+    height: 74px;
+    background: #e2e3e5;
+    border: 1px solid #95999c;
+    margin-left: 88px;
+    cursor: pointer;
+}
+.page .in .swi p{
+    width: 170px;
+}
+.page .in .swi .correct{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 15px;
+    border-bottom: 2px solid #005cbf;
+    border-right: 2px solid #005cbf;
+    transform: rotate(45deg);
+    /*transition: all 0.1s ease 0.1s*/
+    /*position: relative;*/
+    /*right: 30px;*/
+}
+.page .in .swi p:hover{
+    background:#e2e3e5 ;
+}
+.page .in .swi .sp{
+    margin-left: 10px;
+}
+.page .in #text0Three{
+    border: 1px solid rgb(90, 98, 104);
+}
+.page .in .arrow{
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #95999c;
+    border-right: 2px solid #95999c;
+    /*transform: rotate(45deg);*/
+    /*transition: all 0.1s ease 0.1s;*/
+    position: relative;
+    right: 30px;
 }
     /*三角箭头*/
 .page .in .senior .arrow{
@@ -313,6 +369,10 @@
 }
 .page .in .senior .sel span{
    color: #95999c;
+}
+    /*第三页的查询数据框*/
+.page .in .inp3{
+    border: 1px solid #95999c;
 }
     /*数据项*/
 .content .data{
@@ -367,4 +427,36 @@
     max-height: 400px;
     overflow: hidden;
     color: #e2e3e5;
+}
+/*第三页中的底部上下翻页项*/
+.content .left-arrow{
+    /*cursor: pointer;*/
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #95999c;
+    border-left: 2px solid #95999c;
+    transform: rotate(-45deg);
+    /*transition: all 0.1s ease 0.1s*/
+
+}
+.content .right-arrow{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #95999c;
+    border-right: 2px solid #95999c;
+    transform: rotate(45deg);
+    /*transition: all 0.1s ease 0.1s*/
+}
+.content .data-item{
+    margin-top:-20px ;
+    float: right;
+    margin-right: 30px;
+}
+.content .data-item .btn1{
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: -14px;
+    background: #007bff;
 }
