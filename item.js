@@ -15,35 +15,8 @@
          template:` 
        <div class="title">
            <a href="#javascript">
-            <img alt="logo" class="logo" src="img/logo1.jpg" style="">
+            <img alt="logo" class="logo" src="img/logo-2000-390.svg" style="">
            </a>
-        <!--列表-->
-        <div class="title-list">
-            <ul class="title-list-icon">
-                <li><a href="">首页</a></li>
-                <li><a href="">文档</a></li>
-                <li><a href="">博客</a></li>
-                <li><a href="">社区</a></li>
-                <li>
-                    <a href="">
-                        <img alt="" src="img/timg.jpg"
-                             style="width: 30px;height: 30px ;margin-top: 10px;margin-right: 10px;margin-top:0">
-                    </a>
-                </li>
-                <li class="last-li" v-on:mouseenter="fn" v-on:mouseleave="fn2">鼠标移上
-                    <div class="sign-in" v-bind:class="{active:isActive}">
-                        <a href="">登录</a>
-                        <a href="">修改密码</a>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-        <!--隐藏登录修改-->
-        <!-- <div class="sign-in" v-on:mouseleave="fn1" v-bind:class="{active:isActive}">
-             <a href="">登录</a>
-             <a href="">修改密码</a>
-         </div>-->
     </div>`
      }
  let firstOne={
@@ -168,10 +141,13 @@
                 </div>
                 <!--动态显示查询结果  -->
                 <div class="query">
-                    <i></i>
-                    配置管理
-                    <span class="txt">public</span>
-                    <span class="txt1">查询结果：共查询到x条满足要求的配置。</span>
+                    <table>
+                   <thead>
+                   <tr>
+                   <th>group1</th> 
+                   </tr>
+                   </thead>
+                    </table>
                 </div>
                 <!--查询输入框   -->
                 <div class="in">
@@ -204,27 +180,32 @@
                     <table>
                         <thead>
                         <tr>
-                            <th class="add1"><span></span></th>
-                            <th class="add">
-                                <div>Data Id</div>
-                            </th>
-                            <th class="add">
-                                <div>Group</div>
-                            </th>
-                            <th class="add">
-                                <div>归属应用:</div>
-                            </th>
-                            <th class="add">
-                                <div>操作</div>
-                            </th>
-                        </tr>
+                            <th class="add">Data Id</th>
+                            <th class="add">Group</th>
+                            <th class="add">归属应用:</th>
+                            <th class="add"> 操作</th>
+                           </tr>      
+                           <tr>
+                           <td>1212</td>
+                           <td>1212</td>
+                           <td>1212</td>
+                           <td>121212</td>
+                           </tr>
+                         
+                                
+                               
+                            
+                            
+                
+             
+              
+                           
+                       
                         </thead>
                     </table>
                 </div>
                 <!--数据内容 -->
-                <div class="data-content">
-                    <p> 没有数据</p>
-                </div>
+                
             </div>
             <!--底部-->
             <div></div>
@@ -907,7 +888,7 @@
              }
          },
      },
-     template:`<div style="display: block">
+     template:`<div style="display: none">
         <div style="display: block">
             <!--内容-->
             <div class="content" >
@@ -967,14 +948,14 @@
                     </div>
                     <!--查询输入框   -->
                     <div class="in">
-                        <label for="textFive"><i style="color: red ;padding-right: 5px;">*</i>Data ID:</label>
-                        <input id="textFive" placeholder="模糊查询请输入Data " type="text" v-model="msg" :style="{border:bor}" @input="inp">
-                        <label for="text1Five"><i style="color: red ;padding-right: 5px;">*</i>Group:</label>
-                        <input id="text1Five" placeholder="模糊查询请输入Group" type="text" v-model="msg1" :style="{border:bor1}" @input="inp2">
+                        <label for="textFive">服务名称</label>
+                        <input id="textFive" placeholder="请输入服务名称" type="text" v-model="msg" :style="{border:bor}" @input="inp">
+                        <label for="text1Five">分组名称</label>
+                        <input id="text1Five" placeholder="请输入分组名称" type="text" v-model="msg1" :style="{border:bor1}" @input="inp2">
                         <button @click="Empty">查询</button>
                         <div class="text">
-                            <span style="display: none" :style="{display:hide}">Data ID不能为空</span>
-                            <span :style="{display:hide1}" style=" display: none;position: absolute;left: 257px">Group不能为空</span>
+                            <span style="display: none" :style="{display:hide}">请输入服务器名称</span>
+                            <span :style="{display:hide1}" style=" display: none;position: absolute;left: 257px">请输入服务器名称</span>
                         </div>
 
                         <div><i class="VerticalLine"></i>查询结果:共查询到0条满足要求的配置</div>
@@ -987,19 +968,15 @@
                     <div class="data">
                         <table>
                             <thead>
-                            <tr>
-                                <th class="add1"><span></span></th>
+                            <tr>                                                        
                                 <th class="add">
-                                    <div>Data Id</div>
+                                    <div>地址</div>
+                                </th>
+                                <th class="add" style="width: 766px">
+                                    <div>客户端版本</div>
                                 </th>
                                 <th class="add">
-                                    <div>Group</div>
-                                </th>
-                                <th class="add">
-                                    <div>归属应用:</div>
-                                </th>
-                                <th class="add">
-                                    <div>操作</div>
+                                    <div>应用名</div>
                                 </th>
                             </tr>
                             </thead>
@@ -1016,6 +993,168 @@
         </div>
     </div>`
  }
+ //命名空间
+ let am=`<div style="display: block" >
+        <div style="display: block" >
+            <!--内容-->
+            <div class="content">
+                <!--左边栏-->
+                <div class="list-item">
+                    <h2 class="flag">标题</h2>
+                    <div class="project">
+                        <div class="aa" v-on:click="fn3">
+                            <i v-bind:class="{icon:isItemList}"></i>配置管理
+                        </div>
+                        <!--列表项-->
+                        <div class="dis" v-bind:class="{itemList:isItemList}">
+                            <div style="background: #ececf6">配置列表</div>
+                            <div class="bb">历史版本</div>
+                            <div class="bb">监听查询</div>
+                        </div>
+
+
+                        <div class="aa" v-on:click="fn4">
+                            <i v-bind:class="{icon:isItemList1}"></i>服务管理
+                        </div>
+                        <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+                            <div class="bb">服务列表</div>
+                            <div class="bb">订阅者列表</div>
+                        </div>
+
+
+                        <div class="aa"> 命名空间</div>
+                        <div class="aa" v-on:click="fn5">
+                            <i v-bind:class="{icon:isItemList2}"></i>数据管理
+                        </div>
+                        <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+                            <div class="bb">节点列表</div>
+                        </div>
+
+
+                    </div>
+                    <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
+                </div>
+                <!--右边栏-->
+                <div class="page" >
+                    <!--右边栏头部导航-->
+                       <div class="header" style="font-size: 30px">
+                        <i style=" border:1px solid deepskyblue;font-size: 30px;"></i>命名空间 
+                       </div>
+                       <button class="btn-six" @click="establish">新建命名空间</button>
+                       <div style="clear: both"></div>
+                        <div class="data" >
+                        
+           <table>
+                        <thead>
+                        <tr>
+                            <th class="add" style="width:25% ">命名空间名称</th>
+                            <th class="add"  style="width:40% ">命名空间ID</th>
+                            <th class="add"  style="width:10% ">配置数</th>
+                            <th class="add"  style="width:25% "> 操作</th>
+                           </tr>      
+                           <tr>
+                           <td>1212</td>
+                           <td>1212</td>
+                           <td>1212</td>
+                           <td>121212</td>
+                           </tr>
+                        </thead>
+                    </table>
+                       </div >
+             
+                 <div class="spring-box">
+                 <span class="newly-build">新建命名空间</span>          
+                <img src="img/resizeApi.png" alt="12" class="newly-build1">
+                <div class="box-m">
+                  <div class="space"> <label for="in1"><i>*</i>命名空间名</label>  <input idin type="text"> </div>
+                  <div class="describe">  <label for="in2"><i>*</i>描述</label><input id="in2" type="text"></div>
+                </div>
+                
+
+               
+                <button class="determine">确定</button>
+                <button class="cancel">取消</button>
+                 </div>    
+                 
+           
+               </div>  
+               
+               
+              
+    `
+ let firstSix={
+    data:function(){
+        return {
+            isItemList:false,
+            isItemList1:false,
+            isItemList2:false,
+            msg1:'',
+            msg:'',
+            bor:'1px solid #5a6268',
+            bor1:'1px solid #5a6268',
+            hide:'none',
+            hide1:'none',
+        }
+    },
+     methods:{
+         fn3:function(){
+             if (!this.isItemList) {
+                 this.isItemList=true
+             }else{
+                 this.isItemList=false
+             }
+         },
+         fn4:function(){
+             if (!this.isItemList1) {
+                 this.isItemList1=true
+             }else{
+                 this.isItemList1=false
+             }
+         },
+         fn5:function(){
+             if (!this.isItemList2) {
+                 this.isItemList2=true
+             }else{
+                 this.isItemList2=false
+             }
+
+         },
+         inp:function(){
+             this.hide='none';
+             this.bor='1px solid #5a6268';
+             if(this.msg===''){
+                 this.hide='inline-block';
+                 this.bor='1px solid red';
+             }
+         },
+         inp2:function(){
+             this.hide1='none';
+             this.bor1='1px solid #5a6268';
+             if(this.msg1===''){
+                 this.hide1='inline-block';
+                 this.bor1='1px solid red';
+             }
+         },
+         Empty:function(){
+             if(this.msg===''&& this.msg1===''){
+                 this.hide='inline-block';
+                 this.bor='1px solid red';
+                 this.hide1='inline-block';
+                 this.bor1='1px solid red';
+             }else if(this.msg===''&& this.msg1!==''){
+                 this.hide='inline-block';
+                 this.bor='1px solid red';
+             }else if(this.msg!==''&&this.msg1===''){
+                 this.hide1='inline-block';
+                 this.bor1='1px solid red';
+             }
+         },
+         establish:function(){
+
+         }
+     },
+     template:am
+ }
  let vm=new Vue({
       el:'#app',
         components:{
@@ -1024,9 +1163,11 @@
             'first-two':firstTwo,
             'first-three':firstThree,
             'first-four':firstFour,
-            'first-five':firstFive
+            'first-five':firstFive,
+            'first-six':firstSix
       },
         data:{
+
 
         }
     })

@@ -8,7 +8,7 @@
 }
 
 .logo {
-    width: 30px;
+    width: 100px;
     height: 30px;
     margin-top: 10px;
     margin-left: 30px
@@ -208,6 +208,17 @@
     border: 2px solid deepskyblue;
     margin-left: 20px;
     margin-right: 10px;
+}
+.content .page .query tr{
+    display: inline-block;
+    margin-left: 20px;
+}
+.content .page .query th{
+    width: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid #95999c;
+    cursor: pointer;
 }
 .page .in{
     margin-left: 20px;
@@ -427,12 +438,21 @@
     margin-top: 10px;
 
 }
+.content .data table{
+    width: 100%;
+}
+.content .data-content table{
+    width: 100%;
+}
 .content .data th{
-    /*border:1px solid red;*/
+    border:1px solid #95999c;
     height: 30px;
     /*width:3%;*/
     background: #ebecf0;
     font-size: 12px;
+}
+.content .data td{
+    border:1px solid #95999c;
 }
 .content .data span{
     width: 10px;
@@ -450,9 +470,9 @@
     display: inline-block;
 }
 .content .data .add{
-    border-left: 1px solid #95999c;
-    padding-left: 10px;
-    width: 455px;
+    /*border-left: 1px solid #95999c;*/
+    /*padding-left: 10px;*/
+    width: 25%;
     height: 30px;
 }
 .content .data tr .a{
@@ -464,8 +484,8 @@
     border-right: 1px solid #95999c;
     border-bottom: 1px solid #95999c;
     text-align: center;
-    height: 100px;
-    line-height: 100px;
+    /*height: 100px;*/
+    /*line-height: 100px;*/
     margin-left: 20px;
     max-height: 400px;
     overflow: hidden;
@@ -482,6 +502,19 @@
     transform: rotate(-45deg);
     /*transition: all 0.1s ease 0.1s*/
 
+}
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.page .btn-six{
+    float: right;
+    margin-right: 16px;
+    background:#007bff; ;
 }
 .content .right-arrow{
     display: inline-block;
@@ -502,4 +535,46 @@
     margin-left: 0px;
     margin-right: -14px;
     background: #007bff;
+}
+.spring-box{
+    width: 50%;
+    /*height:100px ;*/
+    background:whitesmoke ;
+}
+.spring-box{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.newly-build{
+    margin-left: 25px;
+}
+.newly-build1{
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.spring-box i{
+    color: red;
+}
+.spring-box .box-m{
+    /*margin: 0 auto;*/
+    width: 90%;
+    margin-top:10px;
+    /*background: rebeccapurple;*/
+}
+.spring-box .space+.describe{
+
+}
+.spring-box .box-m .space input{
+    width: 85%;
+}
+.spring-box .box-m .describe input{
+    width: 93%;
+    margin-left: 3px;
 }
