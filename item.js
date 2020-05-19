@@ -19,7 +19,8 @@
            </a>
     </div>`
      }
- let firstOne={
+     //新修改
+     let firstOne={
     data:function(){
              return{
             msg:'',
@@ -1040,7 +1041,7 @@
                        <div class="header" style="font-size: 30px">
                         <i style=" border:1px solid deepskyblue;font-size: 30px;"></i>命名空间 
                        </div>
-                       <button class="btn-six" @click="establish">新建命名空间</button>
+                       <button class="btn-six" @click=" establish">新建命名空间</button>
                        <div style="clear: both"></div>
                         <div class="data" >
                         
@@ -1062,22 +1063,24 @@
                     </table>
                        </div >
              
-                 <div class="spring-box">
-                 <span class="newly-build">新建命名空间</span>          
-                <img src="img/resizeApi.png" alt="12" class="newly-build1">
+                 <div class="spring-box" :style="{display:spring}">
+                 <span class="newly-build" >新建命名空间</span>          
+                <img @click="cross" src="img/resizeApi.png" alt="12" class="newly-build1">
                 <div class="box-m">
-                  <div class="space"> <label for="in1"><i>*</i>命名空间名</label>  <input idin type="text"> </div>
-                  <div class="describe">  <label for="in2"><i>*</i>描述</label><input id="in2" type="text"></div>
+                  <div class="space"> <label for="in1"><i>*</i>命名空间名:</label>  <input idin type="text"> </div>
+                  <div class="describe">  <label for="in2"><i>*</i>描述:</label><input id="in2" type="text"></div>
                 </div>
-                
-
-               
+                <div class="determine-cancel">
                 <button class="determine">确定</button>
                 <button class="cancel">取消</button>
+                
+                </div>
+                
                  </div>    
-                 
-           
-               </div>  
+             </div>>    
+           </div>
+           </div>
+              </div>  
                
                
               
@@ -1085,6 +1088,7 @@
  let firstSix={
     data:function(){
         return {
+            spring:'none',
             isItemList:false,
             isItemList1:false,
             isItemList2:false,
@@ -1150,7 +1154,10 @@
              }
          },
          establish:function(){
-
+    this.spring='block'
+         },
+         cross:function(){
+             this.spring='none'
          }
      },
      template:am
