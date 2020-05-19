@@ -19,8 +19,77 @@
            </a>
     </div>`
      }
+     let firstSidebar={
+     data: function () {
+         return {
+             isItemList: false,
+             isItemList1: false,
+             isItemList2: false,
+         }
+     },
+     methods: {
+         fn3: function () {
+             if (!this.isItemList) {
+                 this.isItemList = true
+             } else {
+                 this.isItemList = false
+             }
+         },
+         fn4: function () {
+             if (!this.isItemList1) {
+                 this.isItemList1 = true
+             } else {
+                 this.isItemList1 = false
+             }
+         },
+         fn5: function () {
+             if (!this.isItemList2) {
+                 this.isItemList2 = true
+             } else {
+                 this.isItemList2 = false
+             }
+
+         },
+
+     },
+     template: `<div class="list-item">
+     <h5 class="flag">NACOS1.1.4</h5>
+     <div class="project">
+     <div class="aa" v-on:click="fn3">
+     <i v-bind:class="{icon:isItemList}"></i>配置管理
+     </div>
+     <!--列表项-->
+     <div class="dis" v-bind:class="{itemList:isItemList}">
+     <div style="background: #ececf6">巅峰战舰</div>
+     <div class="bb">巅峰坦克</div>
+     <div class="bb">抢滩游戏</div>
+     <div class="bb">沙盒游戏</div>
+     </div>
+
+
+     <div class="aa" v-on:click="fn4">
+     <i v-bind:class="{icon:isItemList1}"></i>服务管理
+     </div>
+     <div class="dis1" v-bind:class="{itemList1:isItemList1}">
+      <div class="bb">巅峰战舰</div>
+     <div class="bb">巅峰坦克</div>
+     <div class="bb">抢滩游戏</div>
+     <div class="bb">沙盒游戏</div>
+     </div>
+
+
+     <div class="aa"> 命名空间</div>
+     <div class="aa" v-on:click="fn5">数据管理</div>
+     <div class="dis2" v-bind:class="{itemList2:isItemList2}">
+     </div>
+
+
+     </div>
+     <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
+     </div>`
+ }
      //新修改
-     let firstOne={
+ let firstOne={
     data:function(){
              return{
             msg:'',
@@ -95,43 +164,7 @@
  },
     template: `<div style="display: none">
         <!--内容-->
-        <div class="content" >
-            <!--左边栏-->
-            <div class="list-item">
-                <h2 class="flag">标题</h2>
-                <div class="project">
-                    <div class="aa" v-on:click="fn3">
-                        <i v-bind:class="{icon:isItemList}"></i>配置管理
-                    </div>
-                    <!--列表项-->
-                    <div class="dis" v-bind:class="{itemList:isItemList}">
-                        <div style="background: #ececf6">配置列表</div>
-                        <div class="bb">历史版本</div>
-                        <div class="bb">监听查询</div>
-                    </div>
-
-
-                    <div class="aa" v-on:click="fn4">
-                        <i v-bind:class="{icon:isItemList1}"></i>服务管理
-                    </div>
-                    <div class="dis1" v-bind:class="{itemList1:isItemList1}">
-                        <div class="bb">服务列表</div>
-                        <div class="bb">订阅者列表</div>
-                    </div>
-
-
-                    <div class="aa"> 命名空间</div>
-                    <div class="aa" v-on:click="fn5">
-                        <i v-bind:class="{icon:isItemList2}"></i>数据管理
-                    </div>
-                    <div class="dis2" v-bind:class="{itemList2:isItemList2}">
-                        <div class="bb">节点列表</div>
-                    </div>
-
-
-                </div>
-                <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
-            </div>
+        <div class="content" >          
             <!--右边栏-->
             <div class="page">
                 <!--右边栏头部导航-->
@@ -995,96 +1028,6 @@
     </div>`
  }
  //命名空间
- let am=`<div style="display: block" >
-        <div style="display: block" >
-            <!--内容-->
-            <div class="content">
-                <!--左边栏-->
-                <div class="list-item">
-                    <h2 class="flag">标题</h2>
-                    <div class="project">
-                        <div class="aa" v-on:click="fn3">
-                            <i v-bind:class="{icon:isItemList}"></i>配置管理
-                        </div>
-                        <!--列表项-->
-                        <div class="dis" v-bind:class="{itemList:isItemList}">
-                            <div style="background: #ececf6">配置列表</div>
-                            <div class="bb">历史版本</div>
-                            <div class="bb">监听查询</div>
-                        </div>
-
-
-                        <div class="aa" v-on:click="fn4">
-                            <i v-bind:class="{icon:isItemList1}"></i>服务管理
-                        </div>
-                        <div class="dis1" v-bind:class="{itemList1:isItemList1}">
-                            <div class="bb">服务列表</div>
-                            <div class="bb">订阅者列表</div>
-                        </div>
-
-
-                        <div class="aa"> 命名空间</div>
-                        <div class="aa" v-on:click="fn5">
-                            <i v-bind:class="{icon:isItemList2}"></i>数据管理
-                        </div>
-                        <div class="dis2" v-bind:class="{itemList2:isItemList2}">
-                            <div class="bb">节点列表</div>
-                        </div>
-
-
-                    </div>
-                    <!--        <div style="position:fixed;bottom:0;background: red;"></div>-->
-                </div>
-                <!--右边栏-->
-                <div class="page" >
-                    <!--右边栏头部导航-->
-                       <div class="header" style="font-size: 30px">
-                        <i style=" border:1px solid deepskyblue;font-size: 30px;"></i>命名空间 
-                       </div>
-                       <button class="btn-six" @click=" establish">新建命名空间</button>
-                       <div style="clear: both"></div>
-                        <div class="data" >
-                        
-           <table>
-                        <thead>
-                        <tr>
-                            <th class="add" style="width:25% ">命名空间名称</th>
-                            <th class="add"  style="width:40% ">命名空间ID</th>
-                            <th class="add"  style="width:10% ">配置数</th>
-                            <th class="add"  style="width:25% "> 操作</th>
-                           </tr>      
-                           <tr>
-                           <td>1212</td>
-                           <td>1212</td>
-                           <td>1212</td>
-                           <td>121212</td>
-                           </tr>
-                        </thead>
-                    </table>
-                       </div >
-             
-                 <div class="spring-box" :style="{display:spring}">
-                 <span class="newly-build" >新建命名空间</span>          
-                <img @click="cross" src="img/resizeApi.png" alt="12" class="newly-build1">
-                <div class="box-m">
-                  <div class="space"> <label for="in1"><i>*</i>命名空间名:</label>  <input idin type="text"> </div>
-                  <div class="describe">  <label for="in2"><i>*</i>描述:</label><input id="in2" type="text"></div>
-                </div>
-                <div class="determine-cancel">
-                <button class="determine">确定</button>
-                <button class="cancel">取消</button>
-                
-                </div>
-                
-                 </div>    
-             </div>>    
-           </div>
-           </div>
-              </div>  
-               
-               
-              
-    `
  let firstSix={
     data:function(){
         return {
@@ -1160,22 +1103,87 @@
              this.spring='none'
          }
      },
-     template:am
- }
- let vm=new Vue({
-      el:'#app',
-        components:{
-            'first-title':firstTitle,
-            'first-one':firstOne,
-            'first-two':firstTwo,
-            'first-three':firstThree,
-            'first-four':firstFour,
-            'first-five':firstFive,
-            'first-six':firstSix
-      },
-        data:{
+     template:`<div style="display: none" >
+     <!--内容-->
+     <div class="content"  > 
+     <!--右边栏-->
+     <div class="page" >
+     <!--右边栏头部导航-->
+     <div class="header" style="font-size: 30px">
+     <i style=" border:1px solid deepskyblue;font-size: 30px;"></i>命名空间 
+     </div>
+     <button class="btn-six" @click=" establish">新建命名空间</button>
+     <div style="clear: both"></div>
+     <div class="data" >
 
+     <table>
+     <thead>
+     <tr>
+     <th class="add" style="width:25% ">命名空间名称</th>
+     <th class="add"  style="width:40% ">命名空间ID</th>
+     <th class="add"  style="width:10% ">配置数</th>
+     <th class="add"  style="width:25% "> 操作</th>
+     </tr>      
+     <tr>
+     <td>1212</td>
+     <td>1212</td>
+     <td>1212</td>
+     <td>
+     <a href="#javascript ">详情</a>
+     <a href="#javascript">删除</a>
+     <a href="#javascript">编辑</a>
+     </td>
+     </tr>
+     </thead>
+     </table>
+     </div >
+
+     <div class="spring-box" :style="{display:spring}">
+     <span class="newly-build" >新建命名空间</span>          
+     <img @click="cross" src="img/resizeApi.png" alt="12" class="newly-build1">
+     <div class="box-m">
+     <div class="space"> <label for="in1"><i>*</i>命名空间名:</label>  <input idin type="text"></div>
+     <div class="describe">  <label for="in2"><i>*</i>描述:</label><input id="in2" type="text"></div>
+     </div>
+     <div class="determine-cancel">
+     <button class="determine">确定</button>
+     <button class="cancel">取消</button>
+
+     </div>
+
+     </div>    
+     </div>  
+     </div>
+     </div>`
+
+ }
+ //新建配置
+let firstSeven={
+    data:function(){
+        return{
 
         }
-    })
+    },
+    methods:{
 
+ },
+    template:``
+}
+ let vm=new Vue({
+     el:'#app',
+     components:{
+         'first-title':firstTitle,
+         'first-sidebar':firstSidebar,
+         'first-one':firstOne,
+         'first-two':firstTwo,
+         'first-three':firstThree,
+         'first-four':firstFour,
+         'first-five':firstFive,
+         'first-six':firstSix,
+         'first-seven':firstSeven
+     },
+     data:{
+
+
+     }
+ })
