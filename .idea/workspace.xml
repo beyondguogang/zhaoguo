@@ -13,7 +13,6 @@
     <list default="true" id="6049032d-8f0a-404d-a701-1b3215aba3ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
       <workItem from="1589594270149" duration="22072000" />
       <workItem from="1589765914674" duration="3272000" />
       <workItem from="1589769564287" duration="25135000" />
-      <workItem from="1589853199639" duration="21299000" />
+      <workItem from="1589853199639" duration="22662000" />
     </task>
     <task id="LOCAL-00001">
       <created>1588917600674</created>

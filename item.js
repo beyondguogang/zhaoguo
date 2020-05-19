@@ -1167,7 +1167,25 @@ let firstSeven={
     methods:{
 
  },
-    template:``
+    template:`
+<div>
+<div>新建配置</div>
+<form action="">
+    <div>
+        <label for="">
+            <i></i>
+            Data ID:
+        </label>
+    </div>
+    <div>
+        <label for="">
+            <i></i>
+            Group:
+        </label>
+    </div>
+</form>
+</div>
+`
 }
  let vm=new Vue({
      el:'#app',
